@@ -35,15 +35,22 @@ body {
     font-size: 32px;
     color: white;
     opacity: 0;
-    margin-bottom: 20px;
+    transition: opacity 3s ease-in-out;
+    margin-bottom: 25px;
 }
 .message2 {
     text-align: center;
     position: relative;
     color: white;
     opacity: 0;
+    transition: opacity 3s ease-in-out;
 }
 .message2 p{
     font-size: 21px;
+}
+
+.img {
+    max-width: 100%;
+    margin-bottom: 25px
 }
   
