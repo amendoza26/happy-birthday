@@ -1,55 +1,14 @@
-// Configuración de particles.js
-particlesJS("fireworks", {
-  particles: {
-    number: {
-      value: 50, // Cantidad de partículas
-      density: {
-        enable: true,
-        value_area: 800,
-      },
-    },
-    color: {
-      value: "#ffffff", // Color de las partículas
-    },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#000000",
-      },
-    },
-    size: {
-      value: 2, // Tamaño de las partículas
-      random: true,
-    },
-    move: {
-      enable: true,
-      speed: 2, // Velocidad de movimiento de las partículas
-      direction: "bottom",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-    },
-    line_linked: {
-      enable: false,
-    },
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: false,
-      },
-      onclick: {
-        enable: false,
-      },
-    },
-  },
-});
-
 // Animación del mensaje
-const message = document.getElementById("message");
+const message = document.getElementById("message1");
 setTimeout(() => {
-  message.style.opacity = "1";
+  message1.style.opacity = "1";
 }, 3000); // Mostrar el mensaje después de 3 segundos
+const message2 = document.getElementById("message2");
+setTimeout(() => {
+  message2.style.opacity = "1";
+}, 5000); // Mostrar el mensaje después de 3 segundos
+
+window.addEventListener("click", () => {
+  cancion.style.display = "none"; // Muestra los controles de reproducción
+  cancion.play();
+});
